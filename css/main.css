@@ -57,6 +57,7 @@ main{
     max-width: 560px;
     min-width: 350px;
     padding: 2px 25px;
+    position: relative;
     /* height: 45px; */
 }
 .search_bar a img{
@@ -75,6 +76,18 @@ main{
     outline: none;
     font-size: 15px;
     padding: 5px;
+}
+#mic{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translatey(-50%);
+}
+#tia{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translatey(-50%);
 }
 /* 웹사이트 버튼 */
 .plus{
@@ -100,22 +113,24 @@ main{
     padding: 10px;
     
 }
+
 /* 네이버 이미지 */
 .bg{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: rgba(0,0,0,0.1);
     border-radius: 50%;
     position: relative;
     margin-bottom: 10px;
 }
 .plus ul li a img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 10;
 }
 /* 호버 했을때 이미지 */
 .hover_bg{
@@ -125,7 +140,7 @@ main{
     transform: translateX(50%);
     width: 110px;
     height: 107px;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
     opacity: 0;
     transition: all 0.5s;
 }
@@ -145,7 +160,7 @@ main{
 }
 
 .plus ul li a span{
-    font-size: 14px;
+    font-size: 13px;
     color: #333;
     /* 말줄임 표시 */
     line-height: 17px;

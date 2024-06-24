@@ -1,0 +1,80 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(255, 249, 240, 0.253);
+}
+.main{
+    width: 400px;
+    /* background-color: antiquewhite; */
+    height: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+form{
+    width: 100%;
+    /* background-color: aqua; */
+    /* margin-top: 30px; */
+}
+form ul{
+    margin-top: 30px;
+}
+form ul li{
+    margin-bottom: 20px;
+    text-align: right;
+}
+form ul li label{
+    color: #666;
+    margin-right: 5px;
+}
+form ul li input{
+    width: 91%;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    height: 35px;
+    padding-left: 5px;
+}
+/* 버튼 */
+.logup{
+    width: 100%;
+    color: #fff;
+font-weight: bold;
+font-size: 15px;
+    height: 35px;
+    border-radius: 2px;
+    background-color: #4484f3;
+    border: 1px solid #4484f3;
+    cursor: pointer;
+}
+.logup a{
+    display: block;
+    color: #fff;
+    line-height: 35px;
+    width: 100%;
+    height: 100%;
+}
+.notice{
+    margin-top: 10px;
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    padding: 2px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: 500;
+}
+.notice a{
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
