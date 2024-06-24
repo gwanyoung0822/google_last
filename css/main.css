@@ -11,7 +11,7 @@ nav{
     width: 100%;
     text-align: right;
     padding: 20px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     position: fixed;
     top: 0;
     left: 0;
@@ -79,7 +79,7 @@ main{
 /* 웹사이트 버튼 */
 .plus{
     width: 50%;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     margin: 0 auto;
     max-width: 500px;
     min-width: 360px;
@@ -88,10 +88,89 @@ main{
     display: flex;
     justify-content: space-around;
 }
+.plus ul li{
+    position: relative;
+}
 .plus ul li a{
     width: 90px;
-    background-color: lightblue;
     /* 플렉스 */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
+/* 네이버 이미지 */
+.bg{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.plus ul li a img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 호버 했을때 이미지 */
+.hover_bg{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 110px;
+    height: 107px;
+    background-color: rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.hover_bg img{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.plus ul li:hover .hover_bg{
+    opacity: 1;
+}
+.plus ul li:hover .hover_bg img{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.plus ul li a span{
+    font-size: 14px;
+    color: #333;
+    /* 말줄임 표시 */
+    line-height: 17px;
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    overflow: hidden; /* 줄 바꿈 방지 */
+    text-overflow: ellipsis; /* 넘치는 글자는 ...으로 처리 */
+    max-width: 70px;
+}
+
+/*  버튼  */
+/* .bt{
+    margin-top: 30px;
+} */
+.main_wrap > .bt > button{
+    /* border: none; */
+    padding: 8px 15px;
+    margin: 30px 10px;
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bt button:hover{
+    /* background-color: rgba(0,0,0,0.1); */
+    /* box-shadow: 0 0 5px 1px rgba(0,0,0,0.3); */
+    border: 1px solid #ccc;
 }
