@@ -71,14 +71,17 @@ font-size: 15px;
     margin-top: 10px;
     background-color: goldenrod;
     border: 1px solid goldenrod;
-    padding: 2px;
     color: #333;
     cursor: pointer;
     border-radius: 2px;
     font-weight: 500;
+    width: 80px;
+    height: 23px;
 }
 .notice a{
     width: 100%;
+    display: block;
+    line-height: 23px;
     height: 100%;
     color: #333;
 }

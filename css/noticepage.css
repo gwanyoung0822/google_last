@@ -33,3 +33,7 @@ ul{
 ul li{
     margin-bottom: 20px;
 }
+/* 창 닫기 */
+#close{
+    cursor: pointer;
+}
